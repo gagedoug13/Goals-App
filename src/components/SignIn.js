@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 export default function SignIn() {
     return (
@@ -10,7 +11,9 @@ export default function SignIn() {
                 <h3>password</h3>
                 <input />
 
-                <button>go</button>
+                <Link to='/dashboard'>
+                    <button>go</button>
+                </Link>
             </form>
         </div>
     )
