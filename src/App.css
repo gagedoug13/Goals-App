@@ -9,13 +9,22 @@
   border: 2px black solid;
 }
 
-.dashboardDiv {
-  display: flex;
-  justify-content: center;
-}
 
 .todosDiv, .goalsDiv {
-  width: 40vw;
+  width: 80vw;
   height: 70vh;
   border: 2px solid black;
+}
+
+.longGoalsDiv, .shortGoalsDiv {
+  width: 75vw;
+  height: 30vh;
+  border: 2px solid green;
+}
+
+.todosDiv {
+  height: 55vh;
+  width: 75vw;
+  border: 2px solid green;
+  
 }
