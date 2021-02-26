@@ -3,14 +3,20 @@ import { Link } from "react-router-dom"
 
 export default function Dashboard() {
     return (
-        <div>
-            <Link to='/todos'>
-                <button>ToDo's</button>
-            </Link>
+        <div className='dashboardDiv'>
+            <div className='todosDiv'>
+                <Link to='/todos'>
+                    <button>ToDo's</button>
+                </Link>
+            </div>
            
-           <Link to='/goals'>
-                <button>Goals</button>  
-           </Link>
+           
+            <div className='goalsDiv'>
+                <Link to='/goals'>
+                    <button>Goals</button>  
+                </Link>
+            </div>
+          
         </div>
     )
 }
