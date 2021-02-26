@@ -17,7 +17,7 @@
 }
 
 .longGoalsDiv, .shortGoalsDiv {
-  width: 75vw;
+  width: 79vw;
   height: 30vh;
   border: 2px solid green;
 }
@@ -26,5 +26,16 @@
   height: 55vh;
   width: 75vw;
   border: 2px solid green;
-  
+
+}
+
+.dashboardDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardContainerDiv {
+  width: 80vw;
+  height: auto;
+  border: 2px solid blue;
 }
