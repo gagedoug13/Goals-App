@@ -1,14 +1,29 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import Circle from "../blueCircle.png"
 
 
 export default function Dashboard() {
+
+    const createElement = () => {
+        const element = document.createElement('INPUT')
+        const goalContainer = document.querySelector('.longGoalsDiv')
+        element.setAttribute("type", "text")
+        const circle = document.createElement('IMG')
+        circle.src = {Circle}
+        // element.style.width = "50vw"
+        // element.style.backgroundColor = "black"
+        goalContainer.append(element)
+    }
     return (
         <div className='dashboardDiv'>
             <div className='dashboardContainerDiv'>
+                <header className='dashboardHeader'>Dashboard</header>
                 <div className='goalsDiv'>
-
+                    
+                    
                     <div className='longGoalsDiv'>
+                    <button onClick={createElement} className='createGoal'>create new goal</button>
                         <h2>
                         long term goals 
                         </h2>
