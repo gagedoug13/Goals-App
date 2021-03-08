@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Circle from "../blueCircle.png"
 
 
-export default function Dashboard() {
+export default function Dashboard(props) {
 
     const createElement = () => {
         const element = document.createElement('INPUT')
@@ -12,6 +12,7 @@ export default function Dashboard() {
         const circle = document.createElement('IMG')
         circle.src = {Circle}
         // element.style.width = "50vw"
+        console.log(props.todoQueue)
         // element.style.backgroundColor = "black"
         goalContainer.append(element)
     }
