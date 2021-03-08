@@ -44,3 +44,7 @@
   font-size: 3rem;
   margin-bottom: 5vh;
 }
+
+.todoDeleteButton {
+  color: red;
+}

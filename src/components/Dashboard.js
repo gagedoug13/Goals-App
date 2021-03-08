@@ -7,6 +7,9 @@ export default function Dashboard(props) {
 
     const createElement = () => {
         const element = document.createElement('INPUT')
+        const button = document.createElement('BUTTON')
+        button.className = "todoDeleteButton"
+        button.innerHTML = "delete"
         const goalContainer = document.querySelector('.longGoalsDiv')
         element.setAttribute("type", "text")
         const circle = document.createElement('IMG')
@@ -14,7 +17,7 @@ export default function Dashboard(props) {
         // element.style.width = "50vw"
         console.log(props.todoQueue)
         // element.style.backgroundColor = "black"
-        goalContainer.append(element)
+        goalContainer.append(element, button)
     }
     return (
         <div className='dashboardDiv'>
